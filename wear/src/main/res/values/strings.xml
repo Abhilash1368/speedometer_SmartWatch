@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">speedometer</string>
+    <string name="title_activity_speedlimit">speedlimit</string>
+</resources>

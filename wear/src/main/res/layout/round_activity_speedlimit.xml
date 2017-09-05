@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="15dp"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        app:layout_box="all">
+
+        <NumberPicker
+            android:id="@+id/np"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|top|center"
+            android:isScrollContainer="false"
+
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+        </NumberPicker>
+        <!--<View-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:background="@color/blue"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="-75dp"-->
+            <!--android:layout_marginBottom="-25dp">-->
+
+        <!--</View>-->
+
+        <!--<View-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:background="@color/blue"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="-70dp"-->
+            <!--android:layout_marginBottom="25dp">-->
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Set Speed Limit"
+            android:textSize="15dp"
+            android:textColor="@color/blue" />
+
+
+        <ImageButton
+            android:background="@null"
+            android:layout_gravity="bottom|left"
+            android:id="@+id/cancel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="Cancel"
+            android:tint="@color/red"
+            android:src="@mipmap/step0002" />
+
+        <ImageButton
+            android:background="@null"
+            android:layout_gravity="bottom|right"
+            android:layout_height="50dp"
+            android:id="@+id/ok"
+            android:onClick="Ok"
+            android:tint="@color/green"
+            android:layout_width="50dp"
+            android:src="@mipmap/step" />
+    </FrameLayout>
+</android.support.wearable.view.BoxInsetLayout>

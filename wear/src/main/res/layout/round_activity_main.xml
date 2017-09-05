@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/black"
+
+    android:padding="15dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6ffffFF"
+        android:orientation="vertical"
+        android:visibility="invisible"
+       >
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|top"
+                android:layout_marginBottom="5dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/black"
+                android:scrollbarSize="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_below="@id/progressBar"
+                android:layout_centerHorizontal="true"
+                android:text="Please make sure your wear is connected to phone and location is enabled in phone."
+                android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/displayspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="#0000ff"
+        android:textSize="35dp" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/line" />
+
+
+
+        <com.hitomi.cmlibrary.CircleMenu
+            android:id="@+id/circle_menu"
+            android:layout_width="1000dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginBottom="20dp"
+        android:text="Speed"
+        android:layout_marginLeft="8dp"
+        android:textColor="#0000ff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_marginBottom="20dp"
+        android:text="Miles/hr"
+        android:layout_marginRight="5dp"
+        android:textColor="#0000ff"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="setspeedlimit"
+            android:text="Set Speed Limit" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginTop="20dp"
+        android:text="Alert set"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="20dp"
+        android:onClick="alert_off"
+        android:layout_marginRight="8dp"
+        android:text="Turn Off"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/speed_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:textColor="@color/red"
+        android:onClick="setspeedlimit"
+        android:layout_marginBottom="10dp"
+        android:textSize="35dp"
+        android:visibility="invisible" />
+
+
+</android.support.wearable.view.BoxInsetLayout>
+
+
+
